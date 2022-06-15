@@ -18,3 +18,18 @@ function entrar() {
 }
 
 botaoEntrar.addEventListener('click', entrar);
+
+// Requisito 18
+const botaoEnviar = document.getElementById('submit-btn');
+botaoEnviar.disabled = true;
+const agreement = document.querySelector('#agreement');
+
+agreement.addEventListener('input', () => {
+  const valor = agreement.value;
+
+  if (valor !== null && valor !== '') {
+    botaoEnviar.disabled = false;
+  } else {
+    botaoEnviar.disabled = true;
+  }
+});
