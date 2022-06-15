@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trybewarts</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,14 +25,15 @@
 
     <main class="formulario-main">
         <form action="" method="get" id="evaluation-form">
-            <!-- <h1>Formulário de Avaliação</h1> -->
+            <h1>Formulário de Avaliação</h1>
             
             <div class="box">
                 <input type="text" name="name" placeholder="Nome" id="input-name">
                 <input type="text" name="lastname" placeholder="Sobrenome" id="input-lastname">
             </div>
-            <div class="Requerimento">
+            <div class="requerimento">
                 <input type="email" name="email" placeholder="Email" id="input-email">
+                <label class="casa">Casa: </label>
                 <select id="house">
                     <option selected>Escolha sua casa</option>
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -105,13 +109,16 @@
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
                 <input type="checkbox" name="agreement-info" id="agreement" required>
             </label>
+            <button type="submit" id="submit-btn">Enviar</button>
         </form>
-
+        
         <img src="images/trybewarts-colored.svg" alt="Brasão Trybewarts" id="trybewarts-forms-logo">
+
     </main>
 
-    <button type="submit" id="submit-btn">Enviar</button>
-    <footer><p id="direitos">Direitos reservados à Trybewarts©</p></footer>
+    <footer id="footer">
+        <p id="direitos">Direitos reservados à Trybewarts©</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 
